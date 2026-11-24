@@ -1,6 +1,6 @@
 # 0005. Flusso Git e Conventional Commits
 
-- **Stato:** proposta
+- **Stato:** sostituita da [0006](0006-flusso-git-con-branch-chore.md)
 - **Data:** 2026-11-24
 - **Proponente:** Michele Molent
 - **Componenti coinvolti:** tutti

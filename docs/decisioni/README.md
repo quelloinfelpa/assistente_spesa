@@ -12,6 +12,7 @@ Qui finiscono le decisioni che riguardano più di un componente o che vanno spie
 | 0004 | [Dati versionati e indicizzazione automatica](0004-dati-versionati-e-indicizzazione-automatica.md) | accettata |
 | 0005 | [Flusso Git e Conventional Commits](0005-flusso-git-e-conventional-commits.md) | sostituita da 0006 |
 | 0006 | [Flusso Git e Conventional Commits (con branch `chore/`)](0006-flusso-git-con-branch-chore.md) | proposta |
+| 0007 | [Procedura di lavoro e blocchi automatici](0007-procedura-di-lavoro-e-blocchi.md) | proposta |
 
 ## Modello
 

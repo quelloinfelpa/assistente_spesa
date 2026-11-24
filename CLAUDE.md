@@ -10,13 +10,33 @@ Lingua del progetto: italiano (documentazione, messaggi all'utente, nomi degli s
 
 **Stato attuale:** il repository contiene specifica, registro delle decisioni e pianificazione; il codice non esiste ancora. Quando una scelta viene presa, aggiornare questo file (sezioni "Comandi" e "Architettura") invece di lasciarla implicita nel codice.
 
+## Procedura di lavoro (ogni sessione)
+
+**Prima di iniziare**
+
+1. Partire da `dev` aggiornato (`git switch dev && git pull --ff-only`) e creare un branch secondo la sezione Git. Mai lavorare su `main` o `dev`.
+2. Controllare le PR aperte (`gh pr list`) e le decisioni in stato `proposta`. Se il lavoro richiesto dipende da una PR non ancora unita o da una decisione non accettata, fermarsi e dirlo all'utente invece di procedere.
+3. Verificare che il lavoro stia nella cartella di cui l'utente è responsabile (tabella in "Architettura prevista"). Se tocca la cartella di un altro, un formato di scambio o una decisione, dirlo **prima** di scrivere codice.
+
+**Prima di chiudere**
+
+1. Verificare che il lavoro funzioni (test o avvio del componente, quando esistono).
+2. Aggiornare nello stesso branch README, decisioni e `docs/<componente>/` se il lavoro li riguarda, e la sezione "Comandi" di questo file se i comandi sono cambiati.
+3. Commit secondo Conventional Commits, push del proprio branch, PR verso `dev` con gli altri membri come revisori. Riportare all'utente il link e cosa resta in attesa di approvazione.
+4. Non unire le PR, nemmeno se approvate: lo fa una persona da GitHub.
+
+**Blocchi automatici** (non aggirarli: se scattano, cambiare branch o chiedere all'utente)
+
+- GitHub: `main` e `dev` sono protetti per tutti, amministratori compresi. Si entra solo con PR, almeno un'approvazione e conversazioni risolte; una nuova modifica annulla le approvazioni precedenti; niente force push né cancellazione; su `dev` solo storia lineare (squash merge).
+- Claude Code: l'hook `.claude/hooks/proteggi-branch.sh` (in `.claude/settings.json`) blocca commit, merge, push e rebase su `main` o `dev`, i push espliciti verso `main` o `dev` e l'unione di PR da riga di comando. Scatta anche se quelle parole compaiono solo nel testo del comando (per esempio nel corpo di una PR): in quel caso riformulare il testo.
+
 ## Decisioni, documentazione e storico
 
-- Prima di lavorare leggere le decisioni in `docs/decisioni/` (indice nel suo README) e il calendario in `docs/pianificazione.md`. Una decisione `accettata` vincola; una `proposta` no.
+- Prima di lavorare leggere le decisioni in `docs/decisioni/` (indice nel suo README) e il calendario in `docs/pianificazione.md`. Una decisione `accettata` vincola. Una `proposta` non vincola, ma non si scrive codice che ne dipende finché non è accettata.
 - Se una modifica tocca un formato di scambio, il confine tra componenti, la struttura del repository o una scelta già registrata, **non procedere in silenzio**: proporre una nuova decisione con il modello di `docs/decisioni/README.md` e segnalarla all'utente. Le decisioni accettate non si riscrivono: si sostituiscono con una nuova, cambiando solo la riga di stato della vecchia.
 - Le decisioni interne a un componente vanno in `docs/<componente>/` insieme a specifiche e piani di quel componente (non in `docs/superpowers/`).
 - Codice, README e decisioni cambiano nello stesso commit/PR: se il codice cambia un formato, la stessa PR aggiorna README e decisione.
-- Tutto entra tramite Pull Request rivista dagli altri membri (decisioni 0001 e 0006).
+- Tutto entra tramite Pull Request rivista dagli altri membri (decisioni 0001, 0006 e 0007).
 
 ## Architettura prevista
 

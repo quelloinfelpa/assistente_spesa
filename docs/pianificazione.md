@@ -1,6 +1,6 @@
 # Pianificazione
 
-Proposta da approvare insieme alle decisioni 0001-0005. Consegna: **mercoledì 16 dicembre 2026**. Le date sono indicative: si correggono qui, con una PR.
+Approvata il 24/11/2026 insieme alle decisioni 0001-0005 (PR #1). Consegna: **mercoledì 16 dicembre 2026**. Le date sono indicative: si correggono qui, con una PR.
 
 ## Principio
 

@@ -1,6 +1,6 @@
 # 0001. Registro delle decisioni e approvazione tramite Pull Request
 
-- **Stato:** proposta
+- **Stato:** accettata (2026-11-24, PR #1)
 - **Data:** 2026-11-24
 - **Proponente:** Michele Molent
 - **Componenti coinvolti:** tutti

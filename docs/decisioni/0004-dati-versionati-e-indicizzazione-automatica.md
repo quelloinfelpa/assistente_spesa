@@ -1,6 +1,6 @@
 # 0004. Dati versionati e indicizzazione automatica
 
-- **Stato:** proposta
+- **Stato:** accettata (2026-11-24, PR #1)
 - **Data:** 2026-11-24
 - **Proponente:** Michele Molent
 - **Componenti coinvolti:** mcp_prodotti, mcp_linee_guida, web (Docker Compose)

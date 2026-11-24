@@ -6,11 +6,12 @@ Qui finiscono le decisioni che riguardano più di un componente o che vanno spie
 
 | N. | Decisione | Stato |
 |---|---|---|
-| 0001 | [Registro delle decisioni e approvazione tramite Pull Request](0001-registro-decisioni-e-approvazione.md) | proposta |
-| 0002 | [Struttura del repository e responsabilità](0002-struttura-repository-e-responsabilita.md) | proposta |
-| 0003 | [Due server MCP separati](0003-server-mcp-separati.md) | proposta |
-| 0004 | [Dati versionati e indicizzazione automatica](0004-dati-versionati-e-indicizzazione-automatica.md) | proposta |
-| 0005 | [Flusso Git e Conventional Commits](0005-flusso-git-e-conventional-commits.md) | proposta |
+| 0001 | [Registro delle decisioni e approvazione tramite Pull Request](0001-registro-decisioni-e-approvazione.md) | accettata |
+| 0002 | [Struttura del repository e responsabilità](0002-struttura-repository-e-responsabilita.md) | accettata |
+| 0003 | [Due server MCP separati](0003-server-mcp-separati.md) | accettata |
+| 0004 | [Dati versionati e indicizzazione automatica](0004-dati-versionati-e-indicizzazione-automatica.md) | accettata |
+| 0005 | [Flusso Git e Conventional Commits](0005-flusso-git-e-conventional-commits.md) | sostituita da 0006 |
+| 0006 | [Flusso Git e Conventional Commits (con branch `chore/`)](0006-flusso-git-con-branch-chore.md) | proposta |
 
 ## Modello
 

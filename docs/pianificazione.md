@@ -1,6 +1,6 @@
 # Pianificazione
 
-Proposta da approvare insieme alle decisioni 0001-0005. Consegna: **mercoledì 16 dicembre 2026**. Le date sono indicative: si correggono qui, con una PR.
+Approvata il 24/11/2026 insieme alle decisioni 0001-0005 (PR #1). Consegna: **mercoledì 16 dicembre 2026**. Le date sono indicative: si correggono qui, con una PR.
 
 ## Principio
 
@@ -21,7 +21,7 @@ Prima si monta un sistema completo ma finto, poi si sostituiscono i pezzi finti 
 | 15/12 | Riserva per imprevisti; prova della presentazione | tutti |
 | mer 16/12 | Consegna | |
 
-Ai traguardi del 30/11 (scheletro), 7/12 (sistema integrato) e 16/12 (consegna) si porta `dev` in `main` con un tag (`v0.1`, `v0.2`, `v1.0`), vedi decisione 0005.
+Ai traguardi del 30/11 (scheletro), 7/12 (sistema integrato) e 16/12 (consegna) si porta `dev` in `main` con un tag (`v0.1`, `v0.2`, `v1.0`), vedi decisione 0006.
 
 ## Piani dei singoli componenti
 

@@ -16,7 +16,7 @@ Lingua del progetto: italiano (documentazione, messaggi all'utente, nomi degli s
 - Se una modifica tocca un formato di scambio, il confine tra componenti, la struttura del repository o una scelta già registrata, **non procedere in silenzio**: proporre una nuova decisione con il modello di `docs/decisioni/README.md` e segnalarla all'utente. Le decisioni accettate non si riscrivono: si sostituiscono con una nuova, cambiando solo la riga di stato della vecchia.
 - Le decisioni interne a un componente vanno in `docs/<componente>/` insieme a specifiche e piani di quel componente (non in `docs/superpowers/`).
 - Codice, README e decisioni cambiano nello stesso commit/PR: se il codice cambia un formato, la stessa PR aggiorna README e decisione.
-- Tutto entra tramite Pull Request rivista dagli altri membri (decisioni 0001 e 0005).
+- Tutto entra tramite Pull Request rivista dagli altri membri (decisioni 0001 e 0006).
 
 ## Architettura prevista
 
@@ -77,9 +77,9 @@ Da definire. Inserire qui avvio (`docker compose up`), ingestion dei documenti, 
 
 ## Git
 
-Flusso completo nella decisione 0005. In breve:
+Flusso completo nella decisione 0006 (che sostituisce la 0005). In breve:
 
-- Mai commit diretti su `main` o `dev`. Si lavora su `feature/<componente>-<descrizione>`, `fix/…` o `docs/…` nati da `dev`, con PR verso `dev` (squash merge). `hotfix/…` nasce da `main` e torna in `main` e poi in `dev`.
+- Mai commit diretti su `main` o `dev`. Si lavora su `feature/<componente>-<descrizione>`, `fix/…`, `docs/…` o `chore/…` (manutenzione del repository) nati da `dev`, con PR verso `dev` (squash merge). `hotfix/…` nasce da `main` e torna in `main` e poi in `dev`.
 - Componenti nei nomi dei branch e negli ambiti dei commit: `web`, `agente`, `mcp-prodotti`, `mcp-linee-guida`, `compose` (più `decisioni`, `valutazione` per i commit).
 - Conventional Commits in italiano: `<tipo>(<ambito>): <descrizione>`, tipi `feat`, `fix`, `docs`, `refactor`, `test`, `build`, `chore`. Un cambio di formato di scambio usa `!` e `BREAKING CHANGE:` con riferimento alla decisione.
 - Il titolo della PR verso `dev` segue lo stesso formato, perché diventa il messaggio dello squash merge.
